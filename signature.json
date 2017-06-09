@@ -1,0 +1,19 @@
+{
+    "Comment": "The keys are (code)names of signature schemes. Each signature currently contains what it's based on (other signature schemes, mathematical problems, etc) and its features.",
+    "EdDSA": {
+        "based-on": ["Schnorr"],
+        "features": ["discrete-log", "single-signer"]
+    },
+    "Ed25519": {
+        "based-on": ["EdDSA"],
+        "features": ["discrete-log", "single-signer"]
+    },
+    "Schnorr": {
+        "based-on": ["Difficulty of discrete Logarithm Problem"],
+        "features": ["discrete-log", "single-signer"]
+    },
+    "RSA": {
+        "based-on": ["Difficulty of integer factorization"],
+        "features": ["factor", "single-signer"]
+    }
+}

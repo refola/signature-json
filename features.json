@@ -1,0 +1,16 @@
+{
+    "Comment": "The features elaborate what the feature codes in signature.json mean and relevant information.",
+    "single-signer": {
+        "description": "A single (generally publicly known) agent signs a message. This is the default contemporary signing method. It would be surprising for a signature scheme not to be adaptable to have this feature."
+    },
+    "1-of-n": {
+        "description": "Any one agent out of a group of n agents can sign on behalf of the group. The signing agent may or may not be identifiable by the other group members (see ___ and ___ for these cases)."
+    },
+    "m-of-n": {
+        "description": "(At least) m out of n agents in a group of n must work together to sign on behalf of the group. The signing agents may or may not be identifiable by the other group members (see ___ and ___ for these cases)."
+    },
+    "blind": {
+        "name": "Blind signature scheme",
+        "description": "The signer can receive a message encoded in a way that the signer doesn't know what the message actually is. Then the agent who sent the message to the signer removes the 'blinding factor' to obtain the final signature. This means that the signer doesn't know what they're signing."
+    }
+}
